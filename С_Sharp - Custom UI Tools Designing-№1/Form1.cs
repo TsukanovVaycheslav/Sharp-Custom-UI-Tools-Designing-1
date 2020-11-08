@@ -14,6 +14,7 @@ namespace С_Sharp___Custom_UI_Tools_Designing__1
     {
         int count = 0;
         Random rnd;
+        char[] spec_shars = new char[] { '№', '%', '?', '*', '(', ')', '_', '~', '@', '#', '$', '%', '^', '&' };
 
         public MainForm()
         {
@@ -133,6 +134,37 @@ namespace С_Sharp___Custom_UI_Tools_Designing__1
         private void MainForm_Load(object sender, EventArgs e)
         {
             loadNotepad();
+            clbPassword.SetItemChecked(1, true);
+        }
+
+        private void btnCreatePassword_Click(object sender, EventArgs e)
+        {
+            
+            if (clbPassword.CheckedItems.Count == 0) return;
+            string password = "";
+            for (int i = 0; i < nudPassLength.Value; i++)
+            {
+                int n = rnd.Next(0, clbPassword.CheckedItems.Count);
+                string s = clbPassword.CheckedItems[n].ToString();
+                switch (s)
+                {
+                    case "Цифры": password += rnd.Next(10).ToString();
+                        break;
+
+                    case "Прописные буквы": password += Convert.ToChar(rnd.Next(65, 91));
+                        break;
+
+                    case "Строчные буквы": password += Convert.ToChar(rnd.Next(97, 122));
+                        break;
+
+                    default: password += spec_shars[rnd.Next(spec_shars.Length)];
+                        break;
+
+                }
+                tbPassword.Text = password;
+                Clipboard.SetText(password);
+            }
+           
         }
     }
 }
