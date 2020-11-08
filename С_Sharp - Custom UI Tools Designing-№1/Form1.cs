@@ -91,5 +91,48 @@ namespace С_Sharp___Custom_UI_Tools_Designing__1
                 MessageBox.Show("Поле пустое");
             }
         }
+
+        private void tsmiInsertDate_Click(object sender, EventArgs e)
+        {
+            rtbNotepad.AppendText(DateTime.Now.ToShortDateString() + "\n");
+        }
+
+        private void tsmiInsertTime_Click(object sender, EventArgs e)
+        {
+            rtbNotepad.AppendText(DateTime.Now.ToShortTimeString() + "\n");
+        }
+
+        private void tsmiSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                rtbNotepad.SaveFile("notepad.rtf");
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка при сохранении");
+            }
+        }
+
+        void loadNotepad()
+        {
+            try
+            {
+                rtbNotepad.LoadFile("notepad.rtf");
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка при загрузке");
+            }
+        }
+        private void tsmiLoad_Click(object sender, EventArgs e)
+        {
+            loadNotepad();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            loadNotepad();
+        }
     }
 }

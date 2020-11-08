@@ -50,18 +50,27 @@
             this.btnRandomClear = new System.Windows.Forms.Button();
             this.btnRandomCopy = new System.Windows.Forms.Button();
             this.cbRandom = new System.Windows.Forms.CheckBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.rtbNotepad = new System.Windows.Forms.RichTextBox();
+            this.блокнотToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiInsertDate = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiInsertTime = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiLoad = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
+            this.блокнотToolStripMenuItem,
             this.помощьToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -101,6 +110,7 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -127,9 +137,10 @@
             // lblCount
             // 
             this.lblCount.AutoSize = true;
-            this.lblCount.Location = new System.Drawing.Point(145, 58);
+            this.lblCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCount.Location = new System.Drawing.Point(147, 47);
             this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(13, 13);
+            this.lblCount.Size = new System.Drawing.Size(16, 18);
             this.lblCount.TabIndex = 3;
             this.lblCount.Text = "0";
             // 
@@ -137,7 +148,7 @@
             // 
             this.btnResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnResult.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnResult.Location = new System.Drawing.Point(105, 107);
+            this.btnResult.Location = new System.Drawing.Point(110, 98);
             this.btnResult.Name = "btnResult";
             this.btnResult.Size = new System.Drawing.Size(85, 34);
             this.btnResult.TabIndex = 2;
@@ -147,7 +158,7 @@
             // 
             // btnPlus
             // 
-            this.btnPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnPlus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPlus.Location = new System.Drawing.Point(185, 37);
             this.btnPlus.Name = "btnPlus";
@@ -159,7 +170,7 @@
             // 
             // btnMinus
             // 
-            this.btnMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnMinus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnMinus.Location = new System.Drawing.Point(30, 38);
             this.btnMinus.Name = "btnMinus";
@@ -291,6 +302,72 @@
             this.cbRandom.Text = "Без повторений";
             this.cbRandom.UseVisualStyleBackColor = true;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.rtbNotepad);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(303, 250);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Блокнот";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // rtbNotepad
+            // 
+            this.rtbNotepad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbNotepad.Location = new System.Drawing.Point(0, 0);
+            this.rtbNotepad.Name = "rtbNotepad";
+            this.rtbNotepad.Size = new System.Drawing.Size(303, 250);
+            this.rtbNotepad.TabIndex = 0;
+            this.rtbNotepad.Text = "";
+            // 
+            // блокнотToolStripMenuItem
+            // 
+            this.блокнотToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiInsertDate,
+            this.tsmiInsertTime,
+            this.tsmiSave,
+            this.tsmiLoad});
+            this.блокнотToolStripMenuItem.Name = "блокнотToolStripMenuItem";
+            this.блокнотToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.блокнотToolStripMenuItem.Text = "Блокнот";
+            // 
+            // tsmiInsertDate
+            // 
+            this.tsmiInsertDate.Name = "tsmiInsertDate";
+            this.tsmiInsertDate.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.D)));
+            this.tsmiInsertDate.Size = new System.Drawing.Size(232, 22);
+            this.tsmiInsertDate.Text = "Вставить дату";
+            this.tsmiInsertDate.Click += new System.EventHandler(this.tsmiInsertDate_Click);
+            // 
+            // tsmiInsertTime
+            // 
+            this.tsmiInsertTime.Name = "tsmiInsertTime";
+            this.tsmiInsertTime.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.T)));
+            this.tsmiInsertTime.Size = new System.Drawing.Size(232, 22);
+            this.tsmiInsertTime.Text = "Вставить время";
+            this.tsmiInsertTime.Click += new System.EventHandler(this.tsmiInsertTime_Click);
+            // 
+            // tsmiSave
+            // 
+            this.tsmiSave.Name = "tsmiSave";
+            this.tsmiSave.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
+            this.tsmiSave.Size = new System.Drawing.Size(232, 22);
+            this.tsmiSave.Text = "Сохранить";
+            this.tsmiSave.Click += new System.EventHandler(this.tsmiSave_Click);
+            // 
+            // tsmiLoad
+            // 
+            this.tsmiLoad.Name = "tsmiLoad";
+            this.tsmiLoad.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.L)));
+            this.tsmiLoad.Size = new System.Drawing.Size(232, 22);
+            this.tsmiLoad.Text = "Загрузить";
+            this.tsmiLoad.Click += new System.EventHandler(this.tsmiLoad_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -301,6 +378,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "Мои утилиты";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -310,6 +388,7 @@
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,6 +418,13 @@
         private System.Windows.Forms.Button btnRandomClear;
         private System.Windows.Forms.Button btnRandomCopy;
         private System.Windows.Forms.CheckBox cbRandom;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.RichTextBox rtbNotepad;
+        private System.Windows.Forms.ToolStripMenuItem блокнотToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiInsertDate;
+        private System.Windows.Forms.ToolStripMenuItem tsmiInsertTime;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSave;
+        private System.Windows.Forms.ToolStripMenuItem tsmiLoad;
     }
 }
 
