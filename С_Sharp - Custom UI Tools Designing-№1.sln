@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "С_Sharp - Custom UI Tools Designing-№1", "С_Sharp - Custom UI Tools Designing-№1\С_Sharp - Custom UI Tools Designing-№1.csproj", "{EFF81635-12CD-428C-A79F-D9F98ECDE7B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFF81635-12CD-428C-A79F-D9F98ECDE7B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF81635-12CD-428C-A79F-D9F98ECDE7B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF81635-12CD-428C-A79F-D9F98ECDE7B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF81635-12CD-428C-A79F-D9F98ECDE7B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E35AB82-1FCC-48FB-92B7-35390FD07DF9}
+	EndGlobalSection
+EndGlobal

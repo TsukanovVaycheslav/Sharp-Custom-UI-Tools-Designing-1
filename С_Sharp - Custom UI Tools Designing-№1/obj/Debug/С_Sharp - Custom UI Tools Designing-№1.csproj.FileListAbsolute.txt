@@ -1,0 +1,10 @@
+C:\Users\28032015-0\Desktop\С# - Proj\С_Sharp - Custom UI Tools Designing-№1\С_Sharp - Custom UI Tools Designing-№1\bin\Debug\С_Sharp - Custom UI Tools Designing-№1.exe.config
+C:\Users\28032015-0\Desktop\С# - Proj\С_Sharp - Custom UI Tools Designing-№1\С_Sharp - Custom UI Tools Designing-№1\bin\Debug\С_Sharp - Custom UI Tools Designing-№1.exe
+C:\Users\28032015-0\Desktop\С# - Proj\С_Sharp - Custom UI Tools Designing-№1\С_Sharp - Custom UI Tools Designing-№1\bin\Debug\С_Sharp - Custom UI Tools Designing-№1.pdb
+C:\Users\28032015-0\Desktop\С# - Proj\С_Sharp - Custom UI Tools Designing-№1\С_Sharp - Custom UI Tools Designing-№1\obj\Debug\С_Sharp - Custom UI Tools Designing-№1.csprojAssemblyReference.cache
+C:\Users\28032015-0\Desktop\С# - Proj\С_Sharp - Custom UI Tools Designing-№1\С_Sharp - Custom UI Tools Designing-№1\obj\Debug\С_Sharp___Custom_UI_Tools_Designing__1.MainForm.resources
+C:\Users\28032015-0\Desktop\С# - Proj\С_Sharp - Custom UI Tools Designing-№1\С_Sharp - Custom UI Tools Designing-№1\obj\Debug\С_Sharp___Custom_UI_Tools_Designing__1.Properties.Resources.resources
+C:\Users\28032015-0\Desktop\С# - Proj\С_Sharp - Custom UI Tools Designing-№1\С_Sharp - Custom UI Tools Designing-№1\obj\Debug\С_Sharp - Custom UI Tools Designing-№1.csproj.GenerateResource.cache
+C:\Users\28032015-0\Desktop\С# - Proj\С_Sharp - Custom UI Tools Designing-№1\С_Sharp - Custom UI Tools Designing-№1\obj\Debug\С_Sharp - Custom UI Tools Designing-№1.csproj.CoreCompileInputs.cache
+C:\Users\28032015-0\Desktop\С# - Proj\С_Sharp - Custom UI Tools Designing-№1\С_Sharp - Custom UI Tools Designing-№1\obj\Debug\С_Sharp - Custom UI Tools Designing-№1.exe
+C:\Users\28032015-0\Desktop\С# - Proj\С_Sharp - Custom UI Tools Designing-№1\С_Sharp - Custom UI Tools Designing-№1\obj\Debug\С_Sharp - Custom UI Tools Designing-№1.pdb
