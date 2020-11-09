@@ -141,7 +141,6 @@ namespace С_Sharp___Custom_UI_Tools_Designing__1
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-                                // УУбрать рамку окна
             loadNotepad();
             clbPassword.SetItemChecked(1, true);
         }
@@ -246,6 +245,43 @@ namespace С_Sharp___Custom_UI_Tools_Designing__1
                 default:
                     break;
             }
+        }
+
+        private void btnScore_Click(object sender, EventArgs e)
+        {
+            double a, b;
+   
+                a = Convert.ToDouble(tbNumberOne.Text); 
+                b = Convert.ToDouble(tbNumberTwo.Text);
+           
+            switch (tbSelect.Text)
+            {
+                case "+":
+                    tbResult.Text = Convert.ToString(a + b);
+                    break;
+                case "-":
+                    tbResult.Text = Convert.ToString(a - b);
+                    break;
+                case "*":
+                    tbResult.Text = Convert.ToString(a * b);
+                    break;
+                case "/":
+                    if (b == 0)
+                    {
+                        MessageBox.Show("На ноль делить нельзя!");
+                    }
+                    else
+                    tbResult.Text = Convert.ToString(a / b);
+                    break;
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            tbNumberOne.Text = "";
+            tbNumberTwo.Text = "";
+            tbSelect.Text = "";
+            tbResult.Text = "";
         }
     }
 }

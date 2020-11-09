@@ -39,7 +39,21 @@
             this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnScore = new System.Windows.Forms.Button();
+            this.tbResult = new System.Windows.Forms.TextBox();
+            this.tbNumberTwo = new System.Windows.Forms.TextBox();
+            this.tbSelect = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.cbMetric = new System.Windows.Forms.ComboBox();
+            this.btnSwap = new System.Windows.Forms.Button();
+            this.tbTo = new System.Windows.Forms.TextBox();
+            this.tbFrom = new System.Windows.Forms.TextBox();
             this.btnConvert = new System.Windows.Forms.Button();
             this.cbTo = new System.Windows.Forms.ComboBox();
             this.cbFrom = new System.Windows.Forms.ComboBox();
@@ -67,12 +81,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnRandom = new System.Windows.Forms.Button();
-            this.tbFrom = new System.Windows.Forms.TextBox();
-            this.tbTo = new System.Windows.Forms.TextBox();
-            this.btnSwap = new System.Windows.Forms.Button();
-            this.cbMetric = new System.Windows.Forms.ComboBox();
+            this.tbNumberOne = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPassLength)).BeginInit();
@@ -174,6 +186,7 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -185,6 +198,108 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(311, 276);
             this.tabControl1.TabIndex = 1;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.tbNumberOne);
+            this.tabPage6.Controls.Add(this.btnClear);
+            this.tabPage6.Controls.Add(this.btnScore);
+            this.tabPage6.Controls.Add(this.tbResult);
+            this.tabPage6.Controls.Add(this.tbNumberTwo);
+            this.tabPage6.Controls.Add(this.tbSelect);
+            this.tabPage6.Controls.Add(this.label7);
+            this.tabPage6.Controls.Add(this.label6);
+            this.tabPage6.Controls.Add(this.label5);
+            this.tabPage6.Controls.Add(this.label4);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(303, 250);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Калькулятор";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(220, 156);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 9;
+            this.btnClear.Text = "Очистить";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnScore
+            // 
+            this.btnScore.Location = new System.Drawing.Point(18, 156);
+            this.btnScore.Name = "btnScore";
+            this.btnScore.Size = new System.Drawing.Size(75, 23);
+            this.btnScore.TabIndex = 8;
+            this.btnScore.Text = "Посчитать";
+            this.btnScore.UseVisualStyleBackColor = true;
+            this.btnScore.Click += new System.EventHandler(this.btnScore_Click);
+            // 
+            // tbResult
+            // 
+            this.tbResult.Location = new System.Drawing.Point(101, 209);
+            this.tbResult.Name = "tbResult";
+            this.tbResult.Size = new System.Drawing.Size(107, 20);
+            this.tbResult.TabIndex = 7;
+            // 
+            // tbNumberTwo
+            // 
+            this.tbNumberTwo.Location = new System.Drawing.Point(179, 46);
+            this.tbNumberTwo.Name = "tbNumberTwo";
+            this.tbNumberTwo.Size = new System.Drawing.Size(100, 20);
+            this.tbNumberTwo.TabIndex = 6;
+            // 
+            // tbSelect
+            // 
+            this.tbSelect.FormattingEnabled = true;
+            this.tbSelect.Items.AddRange(new object[] {
+            "+",
+            "-",
+            "*",
+            "/"});
+            this.tbSelect.Location = new System.Drawing.Point(101, 118);
+            this.tbSelect.Name = "tbSelect";
+            this.tbSelect.Size = new System.Drawing.Size(107, 21);
+            this.tbSelect.TabIndex = 4;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(126, 182);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 13);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Результат";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(98, 102);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(110, 13);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Выберите операцию";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(176, 17);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(119, 13);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Введите второе число";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(15, 17);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Введите первое число";
             // 
             // tabPage5
             // 
@@ -201,6 +316,45 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Конвертер";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // cbMetric
+            // 
+            this.cbMetric.FormattingEnabled = true;
+            this.cbMetric.Items.AddRange(new object[] {
+            "Длина",
+            "Вес"});
+            this.cbMetric.Location = new System.Drawing.Point(113, 67);
+            this.cbMetric.Name = "cbMetric";
+            this.cbMetric.Size = new System.Drawing.Size(75, 21);
+            this.cbMetric.TabIndex = 9;
+            this.cbMetric.Text = "Длина";
+            this.cbMetric.SelectedIndexChanged += new System.EventHandler(this.cbMetric_SelectedIndexChanged);
+            // 
+            // btnSwap
+            // 
+            this.btnSwap.Location = new System.Drawing.Point(113, 102);
+            this.btnSwap.Name = "btnSwap";
+            this.btnSwap.Size = new System.Drawing.Size(75, 23);
+            this.btnSwap.TabIndex = 8;
+            this.btnSwap.Text = "< - >";
+            this.btnSwap.UseVisualStyleBackColor = true;
+            this.btnSwap.Click += new System.EventHandler(this.btnSwap_Click);
+            // 
+            // tbTo
+            // 
+            this.tbTo.Location = new System.Drawing.Point(212, 144);
+            this.tbTo.Name = "tbTo";
+            this.tbTo.ReadOnly = true;
+            this.tbTo.Size = new System.Drawing.Size(68, 20);
+            this.tbTo.TabIndex = 7;
+            // 
+            // tbFrom
+            // 
+            this.tbFrom.Location = new System.Drawing.Point(26, 142);
+            this.tbFrom.Name = "tbFrom";
+            this.tbFrom.Size = new System.Drawing.Size(66, 20);
+            this.tbFrom.TabIndex = 6;
+            this.tbFrom.Text = "1";
             // 
             // btnConvert
             // 
@@ -522,44 +676,12 @@
             this.btnRandom.UseVisualStyleBackColor = true;
             this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
             // 
-            // tbFrom
+            // tbNumberOne
             // 
-            this.tbFrom.Location = new System.Drawing.Point(26, 142);
-            this.tbFrom.Name = "tbFrom";
-            this.tbFrom.Size = new System.Drawing.Size(66, 20);
-            this.tbFrom.TabIndex = 6;
-            this.tbFrom.Text = "1";
-            // 
-            // tbTo
-            // 
-            this.tbTo.Location = new System.Drawing.Point(212, 144);
-            this.tbTo.Name = "tbTo";
-            this.tbTo.ReadOnly = true;
-            this.tbTo.Size = new System.Drawing.Size(68, 20);
-            this.tbTo.TabIndex = 7;
-            // 
-            // btnSwap
-            // 
-            this.btnSwap.Location = new System.Drawing.Point(113, 102);
-            this.btnSwap.Name = "btnSwap";
-            this.btnSwap.Size = new System.Drawing.Size(75, 23);
-            this.btnSwap.TabIndex = 8;
-            this.btnSwap.Text = "< - >";
-            this.btnSwap.UseVisualStyleBackColor = true;
-            this.btnSwap.Click += new System.EventHandler(this.btnSwap_Click);
-            // 
-            // cbMetric
-            // 
-            this.cbMetric.FormattingEnabled = true;
-            this.cbMetric.Items.AddRange(new object[] {
-            "Длина",
-            "Вес"});
-            this.cbMetric.Location = new System.Drawing.Point(113, 67);
-            this.cbMetric.Name = "cbMetric";
-            this.cbMetric.Size = new System.Drawing.Size(75, 21);
-            this.cbMetric.TabIndex = 9;
-            this.cbMetric.Text = "Длина";
-            this.cbMetric.SelectedIndexChanged += new System.EventHandler(this.cbMetric_SelectedIndexChanged);
+            this.tbNumberOne.Location = new System.Drawing.Point(35, 46);
+            this.tbNumberOne.Name = "tbNumberOne";
+            this.tbNumberOne.Size = new System.Drawing.Size(100, 20);
+            this.tbNumberOne.TabIndex = 10;
             // 
             // MainForm
             // 
@@ -575,6 +697,8 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tabPage4.ResumeLayout(false);
@@ -637,6 +761,17 @@
         private System.Windows.Forms.TextBox tbFrom;
         private System.Windows.Forms.Button btnSwap;
         private System.Windows.Forms.ComboBox cbMetric;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnScore;
+        private System.Windows.Forms.TextBox tbResult;
+        private System.Windows.Forms.TextBox tbNumberTwo;
+        private System.Windows.Forms.ComboBox tbSelect;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tbNumberOne;
     }
 }
 
