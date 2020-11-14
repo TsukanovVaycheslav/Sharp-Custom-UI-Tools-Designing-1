@@ -2,8 +2,8 @@
 
 Application creation Windows Forms
 
-Generator
-Converter
-Passwords
-Counter
+Generator,
+Converter,
+Passwords,
+Counter,
 Random number generator
